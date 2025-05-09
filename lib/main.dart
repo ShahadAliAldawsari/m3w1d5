@@ -8,7 +8,7 @@ class ProfileCardApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Profile Card App',
+      title: 'Profile Card',
       theme: ThemeData(primarySwatch: Colors.blue),
       home: HomeScreen(),
     );
@@ -36,8 +36,8 @@ class HomeScreen extends StatelessWidget {
 }
 
 class ProfileScreen extends StatelessWidget {
-  final String name = 'John Doe';
-  final String email = 'john.doe@example.com';
+  final String name = 'Shahad';
+  final String email = 'shahad@gmail.com';
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +53,7 @@ class ProfileScreen extends StatelessWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                // CircleAvatar with local image
+                // Local image
                 CircleAvatar(
                   radius: 50,
                   backgroundImage: AssetImage('assets/profile.jpg'),
@@ -64,7 +64,7 @@ class ProfileScreen extends StatelessWidget {
 
                 SizedBox(height: 20),
 
-                // CircleAvatar with network image
+                // Network image
                 CircleAvatar(
                   radius: 40,
                   backgroundImage: NetworkImage('https://i.pravatar.cc/150?img=3'),
